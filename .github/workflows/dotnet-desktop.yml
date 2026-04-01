@@ -18,7 +18,7 @@ jobs:
         dotnet-version: '8.0'
 
     - name: Restore
-      run: dotnet restore chatBot_3_Test_3/chatBot_3_Test_3.csproj
+      run: dotnet restore chatBot_3_Test_3/chatBot_3_Test_3/chatBot_3_Test_3.csproj
 
     - name: Build
-      run: dotnet build chatBot_3_Test_3/chatBot_3_Test_3.csproj --configuration Release
+      run: dotnet build chatBot_3_Test_3/chatBot_3_Test_3/chatBot_3_Test_3.csproj
