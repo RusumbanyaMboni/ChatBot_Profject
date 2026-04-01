@@ -15,10 +15,10 @@ jobs:
     - name: Setup .NET
       uses: actions/setup-dotnet@v3
       with:
-        dotnet-version: '6.0'
+        dotnet-version: '8.0'
 
     - name: Restore
-      run: dotnet restore
+      run: dotnet restore chatBot_3_Test_3/chatBot_3_Test_3.csproj
 
     - name: Build
-      run: dotnet build --configuration Release
+      run: dotnet build chatBot_3_Test_3/chatBot_3_Test_3.csproj --configuration Release
