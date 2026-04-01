@@ -1,4 +1,6 @@
-﻿using System;
+// Improved responses and handling user input
+
+using System;
 
 class ResponseHandler
 {
