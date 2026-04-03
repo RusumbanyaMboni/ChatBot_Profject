@@ -71,8 +71,45 @@ class ResponseHandler
             };
             return creator[random.Next(creator.Length)];
         }
+        
 
-       
+
+        if(input.Contains("thank you") || input.Contains("thanks"))
+        {
+            string[] thanks =
+            {
+                $"You're welcome {name}! I'm here to help with cybersecurity anytime.",
+                $"No problem {name}! Let me know if you have any more questions about online safety.",
+                $"Glad I could help {name}! Stay safe online.",
+                $"You're welcome {name}! Feel free to ask me anything about cybersecurity."
+            };
+            return thanks[random.Next(thanks.Length)];
+        }
+
+       if(input.Contains("can you help me") || input.Contains("help"))
+        {
+            string[] help =
+            {
+                $"Of course {name}! What do you need help with regarding cybersecurity?",
+                $"Sure {name}! What cybersecurity topic do you need assistance with?",
+                $"I'm here to help {name}! What do you want to learn about online safety?",
+                $"Absolutely {name}! What can I assist you with in terms of cybersecurity?"
+            };
+            return help[random.Next(help.Length)];
+        }
+
+       if(input.Contains("what can i ask you about") || input.Contains("what can i ask"))
+        {
+            String[] ask =
+            {
+                $"You can ask me about viruses, malware, phishing, firewalls, hacking, and more {name}!",
+                $"Feel free to ask me about cybersecurity topics like passwords, safe browsing, and online threats {name}!",
+                $"You can ask me anything related to cybersecurity awareness and online safety {name}!",
+                $"Ask me about cybersecurity basics, how to stay safe online, or any specific topics you're curious about {name}!"
+            };
+            return ask[random.Next(ask.Length)];
+        }
+
 
 
 
